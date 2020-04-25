@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.androidenglisstaff.Title.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/title_fragment">
+        <action
+            android:id="@+id/action_titleFragment_to_topicFragment"
+            app:destination="@id/topicFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_vocabFragment"
+            app:destination="@id/vocabFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.androidenglisstaff.Game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/game_fragment">
+        <action
+            android:id="@+id/action_gameFragment_to_endGameFragment"
+            app:destination="@id/endGameFragment" />
+        <argument
+            android:name="topicName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/vocabFragment"
+        android:name="com.example.androidenglisstaff.Vocab.VocabFragment"
+        android:label="VocabFragment"
+        tools:layout="@layout/vocab_fragment">
+        <action
+            android:id="@+id/action_vocabFragment_to_topicFragment"
+            app:destination="@id/topicFragment" />
+        <argument
+            android:name="topicName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/endGameFragment"
+        android:name="com.example.androidenglisstaff.Game.EndGameFragment"
+        android:label="EndGameFragment"
+        tools:layout="@layout/end_game_fragment">
+        <action
+            android:id="@+id/action_endGameFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <argument
+            android:name="score"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.example.androidenglisstaff.Topic.TopicFragment"
+        android:label="TopicFragment"
+        tools:layout="@layout/topic_fragment">
+        <action
+            android:id="@+id/action_topicFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_topicFragment_to_vocabFragment"
+            app:destination="@+id/vocabFragment" />
+    </fragment>
+</navigation>
