@@ -7,10 +7,10 @@
     <data>
         <variable
             name = "topic"
-            type = "com.example.androidenglisstaff.model.Topic"/>
+            type = "com.example.languageLearning.model.Topic"/>
         <variable
             name="clickListener"
-            type="com.example.androidenglisstaff.Topic.TopicListener" />
+            type="com.example.languageLearning.Topic.TopicListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
