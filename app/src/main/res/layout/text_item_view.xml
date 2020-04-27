@@ -6,7 +6,7 @@
     <data>
         <variable
             name="word"
-            type="com.example.androidenglisstaff.model.Word" />
+            type="com.example.languageLearning.model.Word" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/titleFragment"
-        android:name="com.example.androidenglisstaff.Title.TitleFragment"
+        android:name="com.example.languageLearning.Title.TitleFragment"
         android:label="TitleFragment"
         tools:layout="@layout/title_fragment">
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.example.androidenglisstaff.Game.GameFragment"
+        android:name="com.example.languageLearning.Game.GameFragment"
         android:label="GameFragment"
         tools:layout="@layout/game_fragment">
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/vocabFragment"
-        android:name="com.example.androidenglisstaff.Vocab.VocabFragment"
+        android:name="com.example.languageLearning.Vocab.VocabFragment"
         android:label="VocabFragment"
         tools:layout="@layout/vocab_fragment">
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/endGameFragment"
-        android:name="com.example.androidenglisstaff.Game.EndGameFragment"
+        android:name="com.example.languageLearning.Game.EndGameFragment"
         android:label="EndGameFragment"
         tools:layout="@layout/end_game_fragment">
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/topicFragment"
-        android:name="com.example.androidenglisstaff.Topic.TopicFragment"
+        android:name="com.example.languageLearning.Topic.TopicFragment"
         android:label="TopicFragment"
         tools:layout="@layout/topic_fragment">
         <action

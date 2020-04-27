@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidEnglisStaff</string>
+    <string name="app_name">Language Learning</string>
     <string name="start_res">Start</string>
     <string name="vocab_res">Vocab</string>
     <string name="exit_res">Exit</string>
